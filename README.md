@@ -49,8 +49,8 @@ After all this you can set new goals which now doesn't really makes much sense t
 
 
 ## Git(Hub) commands list
-
 ### Local command
+- *git init* Trasform the current folder in a Git Repository.
 - *git status* show active branch, commits, if there's something to commit.
 - *git add filename* to add the file(s) named filename for the next commit.
 - *git commit -m "My commit message"* To commit what is added.
@@ -66,3 +66,8 @@ After all this you can set new goals which now doesn't really makes much sense t
 - *git show commitHash* Show all the modification made by the commit with hash commitHash.
 - *git stash* Recover last commited version, and hide in a "stash area" all the modified file. The stashed areas can be listed with *git stash list*, and all the files shown with *git stash show*.
 - *git reset* is the unsafe version of stash: it recovers the last commit permanently deleting files, so basically never to use.
+### To Link Stuff with GitHub
+- *git clone sourcename* Download a folder from the source sourcename.
+- *git pull sourcename* Update the folder from the source sourcename (not necessary if already linked to the local version).
+- *git push -u origin main* Update the online version of the branch main with your last folder.
+- *it remote add origin REMOTE-URL* Set the online source of the repository for push/pull as REMOTE-URL.
